@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Todoアプリ</h1>
+  <!-- 入力部分 -->
+  <div>
+    <input
+      type="text"
+      placeholder="ここにTodoを入力"
+      id="input-todo"
+    >
+    <button id="create-button">作成</button>
+  </div>
+
+  <!-- フィルタリング部分 -->
+  <div>
+    <input type="radio" name="status" id="status-all" value="all" checked>
+    <label for="status-all">すべて</label>
+    <input type="radio" name="status" id="status-not-start" value="not-start">
+    <label for="status-not-start">未着手</label>
+    <input type="radio" name="status" id="status-working" value="working">
+    <label for="status-working">作業中</label>
+    <input type="radio" name="status" id="status-done" value="done">
+    <label for="status-done">完了済み</label>
+  </div>
+
+  <!-- 一覧表示部分 -->
+  <h2>Todo一覧</h2>
+  <ul id="todo-container">
+  </ul>
+
+  <script src="todo.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
